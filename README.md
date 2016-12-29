@@ -21,7 +21,7 @@ make
 ## Flash images (.hex files)
 
 To flash to onboard ATmega128p of CryptoCape, install the `program jumper` first 
-to wire BBB UART to ATmega UART. For details, check [CrypoCape Hookup Guide].
+to wire BBB UART to ATmega UART. For details, check [CryptoCape Hookup Guide].
 
 After that, download and install the [BBB ATmega328P flasher].
 
