@@ -1,1 +1,1 @@
-bbb_config.mk
+avr_config.mk
