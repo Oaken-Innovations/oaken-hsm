@@ -1,10 +1,15 @@
 # Oaken-HSM
 
-Oaken project hardware secure module (HSM). Seure the ethereum key pair generation, 
-sign and verification using dedicated cryptographic hardware and storage.
+This is the `Project Oaken` hardware secure module (HSM), which is to seure the key generation, 
+sign and verification using dedicated cryptographic hardware and secure storage.
 
-This project is based on [micro-ecc](https://github.com/shuangjj/micro-ecc) elliptic curve functions.
-And [here](OakenHSM_Features.md) is the overview of our HSM.
+This project is based on [micro-ecc](https://github.com/shuangjj/micro-ecc) elliptic curve implementation on constrained devices.
+And [here](OakenHSM_Features.md) is the features of our HSM. We have fully evaluated the ecliptic curve (secp256k1) for ethereum secure key management and signature verification on both Beaglebone Black (BBB) platform and AVR platform.
+
+For the complete integration of the HSM module with the ACORN node, we also build our [nodejs library](https://github.com/Project-Oaken/zymkey) for the [zymbit trusted module](https://zymbit.com/zymkey/) and we are in the process to further integrate our micro-ecc and nodejs client to their platform.
+
+The final HSM integration with ACORN node is shown as the following figure:
+<img src="/imgs/SecurityGateway.png" width="500" alt="Hardware Secure Module of ACORN node">
 
 ## Build
 
@@ -24,11 +29,6 @@ To flash to onboard ATmega128p of CryptoCape, install the `program jumper` first
 to wire BBB UART to ATmega UART. For details, check [CryptoCape Hookup Guide].
 
 After that, download and install the [BBB ATmega328P flasher].
-
-## TODO
-
-- Add RNG to ATmega128p to enable the ECC key generation.
-- Implement secp256k1 on NXP Kinetis KL8x platform.
 
 ## Copyright
 
