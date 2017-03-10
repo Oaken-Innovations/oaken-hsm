@@ -1,4 +1,4 @@
-# Oaken-HSM
+# Oaken-HSM (Depleted!!)
 
 This is the `Project Oaken` hardware secure module (HSM), which is used to secure key generation, 
 signing and verification using dedicated cryptographic hardware and secure storage.
